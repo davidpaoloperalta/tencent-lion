@@ -27,7 +27,7 @@ resource "tencentcloud_clb_listener" "http_listener" {
   port          = 80
   protocol      = "HTTP"
 }
-/*
+
 resource "tencentcloud_clb_listener" "https_listener" {
   clb_id               = tencentcloud_clb_instance.internal_clb.id
   listener_name        = "${var.env_name}-${var.project}-https-listner"
@@ -200,4 +200,3 @@ resource "tencentcloud_clb_redirection" "bo_be_rule_rewrite" {
   target_rule_id     = tencentcloud_clb_listener_rule.bo_be_rule.rule_id
   is_auto_rewrite    = true
 }
-*/
