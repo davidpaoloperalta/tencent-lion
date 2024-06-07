@@ -108,3 +108,7 @@ variable "instance_type" {
   default = "null"
 }
 
+variable "instance_type_jp" {
+  default = "null"
+}
+
